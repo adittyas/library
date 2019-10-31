@@ -1,0 +1,17 @@
+.navbar-vertical .navbar-collapse::before {
+    margin: .5rem -.5rem !important;
+}
+
+.navbar-vertical.navbar-expand-md .navbar-nav .nav-link.active::before {
+    border-left: 5px solid #5e72e4 !important;
+}
+
+#users-tables {
+    * {
+        font-size: 1rem;
+    }
+}
+
+.custom-select {
+    background: none !important;
+}
