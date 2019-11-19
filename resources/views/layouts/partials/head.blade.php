@@ -26,4 +26,10 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/dataTables/dataTables.min.css') }}">
     <!-- Styles -->
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
+    <!-- Animate -->
+    <link href="{{ asset('assets/animation/animate.css') }}" rel="stylesheet">
+    {{-- sweetalert --}}
+    <link href="{{ asset('assets/sweetalert/dist/sweetalert2.all.min.css') }}" rel="stylesheet">
+    {{-- sweetalert 2 --}}
+
 </head>

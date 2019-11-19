@@ -18,7 +18,23 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::namespace('Api')->group(function () {
-    Route::middleware('auth:api')->get('/data','DataController@index')->name('data.user');
+    Route::resource('/user','DataController')->only([
+        'index', 'destroy', 'store', 'update' ,'edit'
+    ]);
+    Route::resource('/publisher','PublisherController')->only([
+        'index', 'destroy', 'store', 'update' ,'edit'
+    ]);
+    Route::resource('/member','MemberController')->only([
+        'index', 'destroy', 'store', 'update' ,'edit'
+    ]);
+    Route::resource('/book','BookController')->only([
+        'index', 'destroy', 'store', 'update' ,'edit'
+    ]);
+
+
+    // Route::prefix('profile')->name('profile.')->group(function () {
+    //     Route::post('{user}', 'ProfileController@updateUser')->name('acount');
+    // });
 });
 
 // Route::namespace('Api')->group(function () {

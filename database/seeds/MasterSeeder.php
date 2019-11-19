@@ -22,7 +22,6 @@ class MasterSeeder extends Seeder
         //     'created_at' => now(),
         //     'email_verified_at' => now()
         // ]);
-
-
+        // factory(App\User::class, 5)->create();
     }
 }

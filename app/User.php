@@ -17,7 +17,7 @@ class User extends Authenticatable implements MustVerifyEmail
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'api_token'
+        'first_name','last_name','id_employee' ,'email', 'password', 'api_token', 'role'
     ];
 
     /**
@@ -45,5 +45,10 @@ class User extends Authenticatable implements MustVerifyEmail
         }else{
             return asset('images/'.$this->avatar);
         }
+    }
+
+    public function profile()
+    {
+        return $this->hasOne('App\profile');
     }
 }

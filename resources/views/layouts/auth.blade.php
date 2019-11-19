@@ -37,8 +37,8 @@
                 <div class="row ">
                     <div class="col-xl-12">
                         <div class="copyright text-center text-muted">
-                            © 2018 <a href="https://www.creative-tim.com" class="font-weight-bold ml-1"
-                                target="_blank">Creative Tim</a>
+                            © 2018 <a href="{{ config('app.name', 'Library') }}.test" class="font-weight-bold ml-1"
+                                target="_blank">aditTyas</a>
                         </div>
                     </div>
                 </div>

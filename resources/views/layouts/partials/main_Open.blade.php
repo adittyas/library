@@ -3,7 +3,7 @@
     <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
         <div class="container-fluid">
             <!-- Brand -->
-            <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="{{ route('dashboard') }}">
+            <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="{{ route('index.dashboard') }}">
                 @php
                 $url = url()->current();
                 $url = explode('/',$url);
@@ -40,7 +40,7 @@
                         <div class=" dropdown-header noti-title">
                             <h6 class="text-overflow m-0">Welcome!</h6>
                         </div>
-                        <a href="{{ route('profile.index') }}" class="dropdown-item">
+                        <a href="{{ route('index.profile') }}" class="dropdown-item">
                             <i class="ni ni-single-02"></i>
                             <span>My profile</span>
                         </a>

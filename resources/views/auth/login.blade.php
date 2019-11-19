@@ -51,20 +51,20 @@
         </form>
     </div>
 </div>
-<div class="row mt-3">
-    <div class="col-6">
+<div class="row mt-3 text-center">
+    <div class="col-12">
         @if (Route::has('password.request'))
         <a class="text-light" href="{{ route('password.request') }}">
             <small>{{ __('Forgot Your Password?') }}</small>
         </a>
         @endif
     </div>
-    <div class="col-6 text-right">
+    {{-- <div class="col-6 text-right">
         @if (Route::has('password.request'))
         <a class="text-light" href="{{ route('register') }}">
-            <small>{{ __('Register new acount!') }}</small>
-        </a>
-        @endif
-    </div>
+    <small>{{ __('Register new acount!') }}</small>
+    </a>
+    @endif
+</div> --}}
 </div>
 @endsection

@@ -14,8 +14,12 @@
                         {{ session('status') }}
                     </div>
                     @endif
+                    @php
+                    echo url()->current().'<br>';
+                    echo url()->full().'<br>';
+                    echo route('index.dashboard');
+                    @endphp
 
-                    You are logged iniii!
                 </div>
             </div>
         </div>
