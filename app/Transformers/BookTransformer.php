@@ -16,14 +16,16 @@ class BookTransformer extends TransformerAbstract
         return [
             'id'            => (int) $book->id,
             'title'         => $book->title,
-            'publisher'  => $book->publisher->name,
+            'publisher'     => $book->publisher->name,
             'author'        => $book->author,
             'category'      => $book->category,
             'hal'           => $book->hal,
-            'qty'           => $book->qty,
+            'available'     => $book->available,
+            'stock_in'      => $book->book_in_stocks,
+            'stock_out'     => $book->book_out_stocks,
             'created'       => $book->created_at->diffForHumans(),
             'updated'       => $book->updated_at->diffForHumans(),
-            'action'        => '<btn title="Edit data" class="edit-user btn btn-outline-light btn-sm border-0" data-id="'.$book->id.'"><i class="fas fa-pen-nib"></i></btn><btn title="Delete data" class="delete-user btn btn-outline-light btn-sm border-0" data-id="'.$book->id.'"><i class="fas fa-trash-alt"></i></btn>',
+            'action'        => '<button title="Edit data" class="edit-book btn btn-outline-light btn-sm border-0" data-id="'.$book->id.'"><i class="fas fa-pen-nib"></i></button><button title="Delete data" class="delete-book btn btn-outline-light btn-sm border-0" data-id="'.$book->id.'"><i class="fas fa-trash-alt"></i></button><button title="Stock in book" class="stock-in btn btn-outline-light btn-sm border-0" data-id="'.$book->id.'"><i class="fas fa-plus"></i></button><button title="Stock out book" class="stock-out btn btn-outline-light btn-sm border-0" data-id="'.$book->id.'"><i class="fas fa-minus"></i></button>',
         ];
     }
 }

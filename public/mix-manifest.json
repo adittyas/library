@@ -1,3 +1,5 @@
 {
-    "/js/all.js": "/js/all.js"
+    "/js/chart.js": "/js/chart.js",
+    "/js/autocomplete.js": "/js/autocomplete.js",
+    "/css/application.css": "/css/application.css"
 }

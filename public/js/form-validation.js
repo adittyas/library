@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $(".customValidate").validate({
+    const validator = $(".customValidate").validate({
         rules: {
             firstname: "required",
             lastname: "required",

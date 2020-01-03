@@ -21,7 +21,7 @@ class PublisherTransformer extends TransformerAbstract
             'contact' => $publisher->contact,
             'created' => $publisher->created_at->diffForHumans(),
             'updated' => $publisher->updated_at->diffForHumans(),
-            'action' => '<btn title="Edit data" class="edit-publisher btn btn-outline-light btn-sm border-0" data-id="'.$publisher->id.'"><i class="fas fa-pen-nib"></i></btn><btn title="Delete data" class="delete-publisher btn btn-outline-light btn-sm border-0" data-id="'.$publisher->id.'"><i class="fas fa-trash-alt"></i></btn>',
+            'action' => '<button title="Edit data" class="edit-publisher btn btn-outline-light btn-sm border-0" data-id="'.$publisher->id.'"><i class="fas fa-pen-nib"></i></button><button title="Delete data" class="delete-publisher btn btn-outline-light btn-sm border-0" data-id="'.$publisher->id.'"><i class="fas fa-trash-alt"></i></button>',
         ];
     }
 }

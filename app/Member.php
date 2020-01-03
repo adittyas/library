@@ -7,6 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 class Member extends Model
 {
       protected $fillable = [
-       'name','nim', 'email', 'address', 'contact'
+       'user_id','name','nim', 'email', 'contact', 'active', 'reason'
     ];
+    public function bookings()
+    {
+        return $this->hasMany('App\Booking');
+    }
 }

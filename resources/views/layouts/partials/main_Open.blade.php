@@ -44,7 +44,7 @@
                             <i class="ni ni-single-02"></i>
                             <span>My profile</span>
                         </a>
-                        <a href="./examples/profile.html" class="dropdown-item">
+                        {{-- <a href="./examples/profile.html" class="dropdown-item">
                             <i class="ni ni-settings-gear-65"></i>
                             <span>Settings</span>
                         </a>
@@ -55,7 +55,7 @@
                         <a href="./examples/profile.html" class="dropdown-item">
                             <i class="ni ni-support-16"></i>
                             <span>Support</span>
-                        </a>
+                        </a> --}}
                         <div class="dropdown-divider"></div>
                         <a onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
                             class="dropdown-item">

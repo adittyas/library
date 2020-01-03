@@ -42,7 +42,7 @@
                         <i class="ni ni-single-02"></i>
                         <span>My profile</span>
                     </a>
-                    <a href="./examples/profile.html" class="dropdown-item">
+                    {{-- <a href="./examples/profile.html" class="dropdown-item">
                         <i class="ni ni-settings-gear-65"></i>
                         <span>Settings</span>
                     </a>
@@ -53,7 +53,7 @@
                     <a href="./examples/profile.html" class="dropdown-item">
                         <i class="ni ni-support-16"></i>
                         <span>Support</span>
-                    </a>
+                    </a> --}}
                     <div class="dropdown-divider"></div>
                     <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
                         class="dropdown-item">
@@ -114,12 +114,12 @@
                     </a>
                 </li>
                 @endrole
-                <li class="nav-item {{ Request::is('catalog') ? 'active' : '' }}">
-                    <a class=" nav-link {{ Request::is('catalog') ? 'active' : '' }}"
-                        href="{{ route('index.catalog') }}"> <i class="ni ni-archive-2 text-primary"></i>
-                        {{ __('Catalog') }}
-                    </a>
-                </li>
+                {{-- <li class="nav-item {{ Request::is('catalog') ? 'active' : '' }}">
+                <a class=" nav-link {{ Request::is('catalog') ? 'active' : '' }}" href="{{ route('index.catalog') }}">
+                    <i class="ni ni-archive-2 text-primary"></i>
+                    {{ __('Catalog') }}
+                </a>
+                </li> --}}
                 @role('admin')
                 <li class="nav-item {{ Request::is('guest') ? 'active' : '' }}">
                     <a class=" nav-link {{ Request::is('guest') ? 'active' : '' }}" href="{{ route('index.guest') }}">
@@ -142,11 +142,11 @@
                         <i class="ni ni-collection text-yellow"></i>{{ __('Booking') }}
                     </a>
                 </li>
-                <li class="nav-item {{ Request::is('return') ? 'active' : '' }}">
-                    <a class="nav-link {{ Request::is('return') ? 'active' : '' }}" href="{{ route('index.return') }}">
-                        <i class="ni ni-curved-next text-yellow"></i>{{ __('Return') }}
-                    </a>
-                </li>
+                {{-- <li class="nav-item {{ Request::is('return') ? 'active' : '' }}">
+                <a class="nav-link {{ Request::is('return') ? 'active' : '' }}" href="{{ route('index.return') }}">
+                    <i class="ni ni-curved-next text-yellow"></i>{{ __('Return') }}
+                </a>
+                </li> --}}
                 {{-- <li class="nav-item">
                     <a class="nav-link" href="#">
                         <i class="ni ni-circle-08 text-yellow"></i>{{ __('Member') }}
@@ -164,12 +164,12 @@
                         <i class="ni ni-books text-info"></i>{{ __('Book') }}
                     </a>
                 </li>
-                <li class="nav-item {{ Request::is('publisher') ? 'active' : '' }}">
-                    <a class="nav-link {{ Request::is('publisher') ? 'active' : '' }}"
-                        href="{{ route('index.publisher') }}">
-                        <i class="ni ni-building text-info"></i>{{ __('Publisher') }}
-                    </a>
-                </li>
+                {{-- <li class="nav-item {{ Request::is('publisher') ? 'active' : '' }}">
+                <a class="nav-link {{ Request::is('publisher') ? 'active' : '' }}"
+                    href="{{ route('index.publisher') }}">
+                    <i class="ni ni-building text-info"></i>{{ __('Publisher') }}
+                </a>
+                </li> --}}
                 <li class="nav-item {{ Request::is('member') ? 'active' : '' }}">
                     <a class="nav-link {{ Request::is('member') ? 'active' : '' }}" href="{{ route('index.member') }}">
                         <i class="ni ni-badge text-info"></i>{{ __('Member') }}

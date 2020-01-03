@@ -34,6 +34,7 @@ class ProfileController extends Controller
              if($request->email!=$upd->email){
                  $upd->email = $request->email;
                  $upd->email_verified_at = null;
+                 $upd->api_token = null;
              }
         }
         $upd->save();

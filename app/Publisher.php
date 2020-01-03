@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Publisher extends Model
 {
     protected $fillable = [
-       'name', 'email', 'address', 'contact'
+       'user_id','name', 'email', 'address', 'contact'
     ];
 
     public function books()

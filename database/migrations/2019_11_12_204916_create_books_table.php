@@ -15,15 +15,15 @@ class CreateBooksTable extends Migration
     {
         Schema::create('books', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('user_id',3);
             $table->integer('publisher_id')->unsigned();
             $table->string('title',150);
             $table->string('author',150);
             $table->string('category',150);
             $table->string('hal',5);
-            $table->integer('qty');
+            $table->mediumInteger('available')->default(0);
             $table->timestamps();
-
-              $table->foreign('publisher_id')->references('id')->on('publishers')->onDelete('no action')->onUpdate('no action');
+            $table->foreign('publisher_id')->references('id')->on('publishers')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 

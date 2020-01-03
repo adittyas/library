@@ -16011,8 +16011,10 @@ textarea[resize="horizontal"] {
 }
 
 .has-success:after {
-    content: "\ea26";
-    color: daken(#2dce89, 18%);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    /* color: darken(#2dce89, 18%); */
     background-color: #69deac;
 }
 
@@ -16029,8 +16031,10 @@ textarea[resize="horizontal"] {
 }
 
 .has-danger:after {
-    content: "\ea53";
-    color: daken(#fb6340, 18%);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00d";
+    /* color: darken(#fb6340, 18%); */
     background-color: #fda08b;
 }
 
@@ -16043,7 +16047,7 @@ textarea[resize="horizontal"] {
 }
 
 .has-danger .form-control::placeholder {
-    color: #fb6340;
+    /* color: #fb6340; */
 }
 
 .input-group {
